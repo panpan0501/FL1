@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>無定形 FORMLESS - 畢業製作展覽</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+  <div class="cursor-glow"></div>
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="nav-title">無定形 FORMLESS</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="about.html">關於我們</a></li>
+        <li><a href="works.html">展覽作品</a></li>
+        <li><a href="team.html">團隊介紹</a></li>
+        <li><a href="venue.html">展場資訊</a></li>
+        <li><a href="sponsors.html">贊助廠商</a></li>
+        <li><a href="filmfestival.html">線上影展</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="container">
+    <section id="home" class="hero">
+      <p class="eyebrow">第19屆靜宜大學大衆傳播學系畢業製作</p>
+   <h1 class="hero-heading">
+    
+    <!-- 中文 無定形 -->
+    <span class="zh-text">
+        <span style="--i:1">無</span>
+        <span style="--i:2">定</span>
+        <span style="--i:3">形</span>
+    </span>
+    <!-- 英文 FORMLESS -->
+    <span class="eng-text">
+        <span style="--i:1">F</span>
+        <span style="--i:2">O</span>
+        <span style="--i:3">R</span>
+        <span style="--i:4">M</span>
+        <span style="--i:5">L</span>
+        <span style="--i:6">E</span>
+        <span style="--i:7">S</span>
+        <span style="--i:8">S</span>
+    </span>
+
+</h1>
+
+</h1>
+      <p class="subtitle">未被定義，在流動中變化成形。</p>
+   <div class="buttons" style="display: flex; gap: 16px; align-items: center;">
+<a href="#works" class="btn" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none; background: linear-gradient(135deg, rgba(68, 52, 42, 0.85) 0%, rgba(45, 34, 27, 0.95) 100%); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); color: #F8F2EC; border: 1.5px solid rgba(255, 220, 190, 0.4); border-radius: 30px; padding: 12px 32px; box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.5), inset 0 -3px 4px rgba(0, 0, 0, 0.6), 0 12px 30px rgba(15, 8, 5, 0.5); font-weight: 500; letter-spacing: 0.05em;">查看作品</a>    <a href="#team" class="btn" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none; background: rgba(255, 255, 255, 0.22); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); color: #2B231D; border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 30px; padding: 12px 32px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12), inset 0 1px 1px rgba(255, 255, 255, 0.4); font-weight: 500; letter-spacing: 0.05em;">認識團隊</a>
+</div>
+
+<!-- 倒計時面板 -->
+    <section class="countdown-panel" style="background: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.4); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-radius: 20px; padding: 24px 36px; width: 100%; max-width: 580px; margin: 0 auto; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08); text-align: center;">
+        <div class="countdown container">
+            <h2 style="color: #3A2C23; margin: 0 0 16px 0; font-size: 19px; font-weight: 600; letter-spacing: 0.05em;">畢業展覽倒計時</h2>
+            <div class="countdown-timer" id="countdown" style="display: flex; gap: 14px; justify-content: center; align-items: center;">
+                <div class="time-unit" style="background: rgba(255, 255, 255, 0.35); border: 1px solid rgba(255, 255, 255, 0.5); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 12px; padding: 10px 18px; min-width: 64px; text-align: center;">
+                    <span class="time-value" id="days" style="color: #2B231D; font-weight: bold; font-size: 24px; display: block; line-height: 1.2;">00</span>
+                    <span class="time-label" style="color: #4A3D35; font-size: 13px; display: block; margin-top: 4px;">天</span>
+                </div>
+                <div class="time-unit" style="background: rgba(255, 255, 255, 0.35); border: 1px solid rgba(255, 255, 255, 0.5); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 12px; padding: 10px 18px; min-width: 64px; text-align: center;">
+                    <span class="time-value" id="hours" style="color: #2B231D; font-weight: bold; font-size: 24px; display: block; line-height: 1.2;">00</span>
+                    <span class="time-label" style="color: #4A3D35; font-size: 13px; display: block; margin-top: 4px;">時</span>
+                </div>
+                <div class="time-unit" style="background: rgba(255, 255, 255, 0.35); border: 1px solid rgba(255, 255, 255, 0.5); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 12px; padding: 10px 18px; min-width: 64px; text-align: center;">
+                    <span class="time-value" id="minutes" style="color: #2B231D; font-weight: bold; font-size: 24px; display: block; line-height: 1.2;">00</span>
+                    <span class="time-label" style="color: #4A3D35; font-size: 13px; display: block; margin-top: 4px;">分</span>
+                </div>
+                <div class="time-unit" style="background: rgba(255, 255, 255, 0.35); border: 1px solid rgba(255, 255, 255, 0.5); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 12px; padding: 10px 18px; min-width: 64px; text-align: center;">
+                    <span class="time-value" id="seconds" style="color: #2B231D; font-weight: bold; font-size: 24px; display: block; line-height: 1.2;">00</span>
+                    <span class="time-label" style="color: #4A3D35; font-size: 13px; display: block; margin-top: 4px;">秒</span>
+                </div>
+            </div>
+            <p class="countdown-date" style="color: #4A3D35; margin: 14px 0 0 0; font-size: 13px;">2027年5月1日 開展</p>
+        </div>
+    </section>
+                
+    <section id="about" class="panel">
+      <h2>主題簡介</h2>
+      <p>這是 2026 大傳系全體同學的集體實驗。我們拒絕標籤與框架，在影像、新聞與多種媒介的碰撞下，不斷翻轉並重建自我。</p>
+      <p>我們在流動中相遇，在變化中成形。歡迎來到我們的「無定形」世界。</p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </section>
+
+    <section id="works" class="panel">
+      <h2>作品展示</h2>
+      <p style="color: rgba(245, 242, 255, 0.7); margin-bottom: 24px;">本屆畢業製作共分為三大類別，共 19 組作品。</p>
+    </section>
+
+    <!-- 平面組 -->
+    <section id="graphic-works" class="panel">
+      <h2>平面組</h2>
+      <p style="color: rgba(245, 242, 255, 0.7); margin-bottom: 20px;">雜誌類 (6 組) | 新媒體網站 (1 組) | Podcast 節目 (2 組)</p>
+      <div class="works-showcase">
+        <!-- 作品將在此添加 -->
+        <p style="color: rgba(245, 242, 255, 0.5); text-align: center; padding: 40px;">敬請期待平面組作品發佈</p>
+      </div>
+    </section>
+
+    <!-- 論文組 -->
+    <section id="thesis-works" class="panel">
+      <h2>論文組</h2>
+      <p style="color: rgba(245, 242, 255, 0.7); margin-bottom: 20px;">研究論文 (2 組)</p>
+      <div class="works-showcase">
+        <!-- 作品將在此添加 -->
+        <p style="color: rgba(245, 242, 255, 0.5); text-align: center; padding: 40px;">敬請期待論文組作品發佈</p>
+      </div>
+    </section>
+
+    <!-- 影視組 -->
+    <section id="video-works" class="panel">
+      <h2>影視組</h2>
+      <p style="color: rgba(245, 242, 255, 0.7); margin-bottom: 20px;">紀錄片 (4 組) | 電視節目 (4 組)</p>
+      <div class="works-showcase">
+        <!-- 作品將在此添加 -->
+        <p style="color: rgba(245, 242, 255, 0.5); text-align: center; padding: 40px;">敬請期待影視組作品發佈</p>
+      </div>
+    </section>
+
+    <section id="team" class="panel">
+      <h2>團隊介紹</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="placeholder-member1.jpg" alt="團隊成員1" />
+          <h4>小明</h4>
+          <p>總召組</p>
+          <p>負責整體...</p>
+        </div>
+        <div class="team-member">
+          <img src="placeholder-member2.jpg" alt="團隊成員2" />
+          <h4>小華</h4>
+          <p>器材組</p>
+          <p>負責器材...</p>
+        </div>
+        <div class="team-member">
+          <img src="placeholder-member3.jpg" alt="團隊成員3" />
+          <h4>小美</h4>
+          <p>網路組</p>
+          <p>負責網路...</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="panel">
+      <h2>最新公告</h2>
+      <div class="news-list">
+        <article class="news-item">
+          <h4>作品展覽時間確認</h4>
+          <p class="news-date">2026年05月10日</p>
+          <p>『無定形 FORMLESS』將於5月10日在希嘉1樓正式展出，歡迎各位前來參觀體驗。</p>
+        </article>
+        <article class="news-item">
+          <h4>互動功能更新</h4>
+          <p class="news-date">2027年5月20日</p>
+          <p>我們新增了更多互動元素，會在校外場讓觀眾能夠更深入地探索作品的各個層面。</p>
+        </article>
+        <article class="news-item">
+          <h4>團隊訪談預告</h4>
+          <p class="news-date">2027年5月15日</p>
+          <p>下週？將釋出團隊創作過程的幕後花絮訪談影片，敬請期待！</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="panel">
+      <h2>聯絡我們</h2>
+      <p>有任何問題或合作意願，歡迎透過以下方式聯絡：</p>
+      <div class="contact-info">
+        <p><strong>電子郵件：</strong> formless.team@design.edu.tw</p>
+        <p><strong>電話：</strong> (02) 1234-5678</p>
+        <p><strong>地址：</strong> 臺中市沙鹿區臺灣大道七段 200 號 靜宜大學大衆傳播學系</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="您的姓名" required>
+        <input type="email" placeholder="電子郵件" required>
+        <textarea placeholder="留言內容" rows="4" required></textarea>
+        <button type="submit" class="btn btn-primary">送出訊息</button>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
